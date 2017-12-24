@@ -10,5 +10,8 @@ class Patient
   def add_appointment(appt)
     @appointments << appt
   end
+
+  def doctors
+    @appointments.collect { |appt| appt.doctor }
 end
     
